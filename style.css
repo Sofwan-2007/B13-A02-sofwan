@@ -21,8 +21,7 @@ body{
 }
 header{
     max-width: 1600px;
-    margin: 0 auto 120px;    background: url(./img/hero-bg.png);
-
+    margin: 0 auto 120px;
 }
 .nav-section nav{
     display: flex;
@@ -48,34 +47,83 @@ font-weight: 600;
 background:linear-gradient(to right, #F7E93F, #FB09B4, #9100F8 ) ;
 border: none;
 }
-.header-sectio{
-    width: 100%;
-    height: 100%;
-}
-.header-img{
-    width: 100%;
-    height: 100%;
-    background: url(./img/hero-circle.png);
-    padding: 100px 620px 100px ;
-    background-position: bottom;
+.head-section{
+    /* max-width: 1600px;
+    margin: 0 auto; */
+    background:url(./img/hero-bg.png);
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 200px;
 }
-.header-img-b{
+.hero-circle{
+    background: linear-gradient(to top, #F7E93F, #FB09B4, #9100F8);
+    width: 350px;
+    height: 350px;
+    border: 3px solid tomato;
+    border-radius: 50%;
     display: flex;
+    justify-content: center;
+    align-items: center;
     justify-self: center;
     align-self: center;
+    position: relative;
+    top: -150px;
 }
+.hero-circle img{
+    width: 130px;
+    height: auto;
+}
+.text-info{
+    margin: -90px;
+}
+.text-title{
+    text-align: center;
+    font-size: 80px;
+font-weight: 800;
+}
+.text-p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 20px;
+font-weight: 400;
+line-height: 19px;
+}
+.button{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding: 30px 0;
+}
+.text-btn-a{
+    padding: 12px 15px;
+    border-radius: 50px;
+    color: white;
+    font-size: 16px;
+font-weight: 600;
+background:linear-gradient(to right, #F7E93F, #FB09B4, #9100F8 ) ;
+border: none;
+}
+.text-btn-b{
+    padding: 12px 15px;
+    border-radius: 50px;
+    color: greenyellow;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid greenyellow;
+} 
 .badge {
 position: absolute;
-top: 190px;
-right: 730px;
+top: 150px;
+right: 760px;
 background: #2bffb9;
 color: #000;
 font-size: 20px;
 padding: 8px 16px;
 border-radius: 20px;
 font-weight: 600;
-animation: autoTransform 3s infinite ease-in-out;
+animation: autoTransform 4s infinite ease-in-out;
 }
 .badge:hover{
     transform: 
@@ -83,8 +131,6 @@ animation: autoTransform 3s infinite ease-in-out;
     scale(1.9)              
     rotate(-360deg);
 }
-
-
 
 @keyframes autoTransform {
 0% {
@@ -96,32 +142,6 @@ animation: autoTransform 3s infinite ease-in-out;
 100% {
     transform: translate(0, 0) rotate(360deg) scale(1);
 }
-}
-
-
-.header-info{
-    text-align: center;
-    line-height: 40px;
-    padding: 30px 0;
-} 
-.header-title{
-    padding-top: 30px;
-    font-size: 60px;
-font-weight: 800;
-}
-.header-p{
-    font-size: 20px;
-font-weight: 400;
-padding: 30px 0;
-}
-.header-btn-b{
-    padding: 12px 15px;
-    border-radius: 50px;
-    color: greenyellow;
-    font-size: 16px;
-    font-weight: 600;
-    background-color: rgba(255, 255, 255, 0);
-    border: 2px solid greenyellow;
 }
 
 /* about */
@@ -390,54 +410,64 @@ Mobile Responsive (max-width: 576px)
     }
     
     /* Header */
-    header{
+    @media (max-width: 576px){
 
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: left center;
+    .head-section{
+        padding: 120px 14px 60px;
     }
-    .header-sectio{
-        width: 100%;
+
+    /* HERO CIRCLE */
+    .hero-circle{
+        width: 200px;
+        height: 200px;
+        margin-bottom: -30px;
     }
-    .header-img{
-        width: 250px;
-        margin: 0 auto;
-        padding: 60px 16px;
-        background-size: contain;
-        background-position: center;
+
+    .hero-circle img{
+        width: 80px;
     }
-    .header-img-b{
-        width: 70px;
+
+    /* BADGE */
+    .badge{
+        top: 100px;
+        right: 90px;
+        font-size: 13px;
+        padding: 5px 12px;
     }
-    .header-img{
-    width: 100%;
-    height: 100%;
-    padding: 30px 30px 30px ;
-    background-position: center;
-    background-repeat: no-repeat;
+    /* TEXT */
+    .text-title{
+        font-size: 32px;
+        line-height: 1.1;
     }
-    .badge {
-top: 110px;
-right: 110px;
+
+    .text-p{
+        position: absolute;
+        
+        right: 55px;
+        font-size: 18px;
+        width: 80%;
+        padding-top: 0 10px;
+    }
+
+    /* BUTTONS */
+    .button{
+        gap: 12px;
+        padding-top: 80px;
+    }
+
+    .text-btn-a,
+    .text-btn-b{
+        width: 30%;
+        font-size: 14px;
+        padding: 10px 0;
+    }
 }
-    .header-title{
-        font-size: 50px;
-        padding-top: 20px;
-    }
-    .Sofwan{
-        font-size: 70px;
-        text-align: left;
-        padding: 0;
-    }
-    .header-p{
-        font-size: 16px;
-        line-height: 24px;
-        padding: 16px 0;
-    }
+
     .sal{
     display: block;
     text-align: right;
     margin-right: 0;
+    padding-right: 20px;
     padding-bottom: 50px;
 }
     .salman{
