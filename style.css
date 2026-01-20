@@ -124,3 +124,118 @@ padding: 30px 0;
     border: 2px solid greenyellow;
 }
 
+/* about */
+.about{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px;
+    background-color: #00000036;
+}
+.about-title{
+    font-style: Bold;
+font-size: 50px;
+font-weight: 700;
+text-align: center;
+text-transform: capitalize;
+}
+.about-p{
+    font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: center;
+letter-spacing: 16%;
+opacity: 0.8;
+padding: 16px 0;
+
+}
+.about-second-div{
+    display: flex;
+    justify-content: space-between;
+    margin-top:80px;
+    text-align: center;
+    align-items: center;
+}
+.card-title{
+    color: #00FF88;
+    font-size: 50px;
+font-weight: 900;
+padding-bottom: 10px;
+}
+    .card-p{
+        font-size: 18px;
+font-weight: 400;
+opacity: 0.8;
+
+    }
+    /* techwave */
+.techwave{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 120px;
+}
+.techwave-section{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 30px;
+    row-gap: 30px;
+}
+.techwave-card{
+    width: 100%;
+    border-radius: 20px;
+    background: rgba(53, 17, 101, 0.4);
+    padding:40px ;
+    
+}
+.host-icon-i {
+    background: linear-gradient(to top, #F7E93F, #FB09B4, #9100F8);
+    -webkit-background-clip: text;
+    color: transparent; 
+    font-size: 50px;
+}
+.big-layout{
+        grid-column: span 2;
+        grid-row: span 2;
+        }
+.normal-layout{
+        grid-column: span 3;
+        grid-row: span 1;
+        }
+.normal-layout-v{
+        grid-column: span 4;
+        grid-row: span 1;
+        }
+.wide-layout{
+            grid-column: span 1;
+            grid-row: span 1;
+        }
+.techwave-title-mein{
+    font-style: Bold;
+font-size: 50px;
+font-weight: 700;
+text-align: center;
+text-transform: capitalize;
+padding-bottom: 20px;
+}
+.techwave-title{
+    font-style: Bold;
+font-size: 25px;
+font-weight: 700;
+padding: 20px 0 20px;
+}
+.techwave-p{
+    font-size: 18px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 8%;
+}
+.sof{
+    padding-top: 200px;
+}
+
+
+#img-zap{
+    width:55px ;
+    height: 55px;
+}
+/* Featured-section */
